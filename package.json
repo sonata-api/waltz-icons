@@ -1,6 +1,6 @@
 {
   "name": "waltz-icons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://sonata-api.github.io/waltz-icons",
   "description": "",
   "keywords": [],
@@ -23,10 +23,18 @@
   },
   "typesVersions": {
     "*": {
-      "common": ["dist/common.d.ts"],
-      "vite": ["dist/vite.d.ts"],
-      "webpack": ["dist/webpack.d.ts"],
-      "webpack-loader": ["dist/webpack-loader.d.ts"]
+      "common": [
+        "dist/common.d.ts"
+      ],
+      "vite": [
+        "dist/vite.d.ts"
+      ],
+      "webpack": [
+        "dist/webpack.d.ts"
+      ],
+      "webpack-loader": [
+        "dist/webpack-loader.d.ts"
+      ]
     }
   },
   "devDependencies": {
