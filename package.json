@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "homepage": "https://sonata-api.github.io/waltz-icons",
   "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -15,12 +21,14 @@
     "./webpack": "./dist/webpack.js",
     "./webpack-loader": "./dist/webpack-loader.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "files": [
-    "dist"
-  ],
+  "typesVersions": {
+    "*": {
+      "common": ["dist/common.d.ts"],
+      "vite": ["dist/vite.d.ts"],
+      "webpack": ["dist/webpack.d.ts"],
+      "webpack-loader": ["dist/webpack-loader.d.ts"]
+    }
+  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
     "vite": "4.2.0",
