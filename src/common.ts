@@ -45,8 +45,9 @@ const makeExpressions = (options: Options) => {
   const regexes = [
     new RegExp(`<${options.tag}[^>]*[^:]name="([^"]+)"`, 'mg'),
     /<[^>]*[^:]icon="([^"]+)"/mg,
+    /name: ?['"]([^'"]+)['"]/mg,
     /icon: ?['"]([^'"]+)['"]/mg,
-    /icon: ([\w:-]+)$/mg,
+    /icon: ?([\w:-]+)$/mg,
   ]
 
   return regexes
