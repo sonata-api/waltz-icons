@@ -104,12 +104,15 @@ const webpackConfig = {
 
 Next, all you have to do is create your icon component according to your application needs. We gonna be using Vue in this example but it really doesn't matter, you could be using React or anything else, including pure HTML5.
 
+> [!IMPORTANT]
+> The property that specifies the icon name MUST BE named "icon" for the pattern matching to work.
+
 ```vue
 <script setup>
 withDefaults(
   defineProps({
     variant: String,
-    name: String
+    icon: String
   }), {
     variant: 'line'
   }

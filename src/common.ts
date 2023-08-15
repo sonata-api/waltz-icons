@@ -43,9 +43,8 @@ export const defaultOptions: Partial<Options> = {
 
 const makeExpressions = (options: Options) => {
   const regexes = [
-    new RegExp(`<${options.tag}[^>]*[^:]name="([^"]+)"`, 'mg'),
+    new RegExp(`<${options.tag}[^>]*[^:]icon="([^"]+)"`, 'mg'),
     /<[^>]*[^:]icon="([^"]+)"/mg,
-    /name: ?['"]([^'"]+)['"]/mg,
     /icon: ?['"]([^'"]+)['"]/mg,
     /icon: ?([\w:-]+)$/mg,
   ]
